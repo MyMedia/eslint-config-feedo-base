@@ -15,9 +15,7 @@ module.exports = {
     // enforces no braces where they can be omitted
     // https://eslint.org/docs/rules/arrow-body-style
     // TODO: enable requireReturnForObjectLiteral?
-    'arrow-body-style': ['error', 'as-needed', {
-      requireReturnForObjectLiteral: false,
-    }],
+    'arrow-body-style': ['error', 'always'],
 
     // require parens in arrow function arguments
     // https://eslint.org/docs/rules/arrow-parens
@@ -94,10 +92,7 @@ module.exports = {
 
     // require method and property shorthand syntax for object literals
     // https://eslint.org/docs/rules/object-shorthand
-    'object-shorthand': ['error', 'always', {
-      ignoreConstructors: false,
-      avoidQuotes: true,
-    }],
+    'object-shorthand': 'off',
 
     // suggest using arrow functions as callbacks
     'prefer-arrow-callback': ['error', {
@@ -113,7 +108,7 @@ module.exports = {
 
     // Prefer destructuring from arrays and objects
     // https://eslint.org/docs/rules/prefer-destructuring
-    'prefer-destructuring': ['error', {
+    'prefer-destructuring': ['warn', {
       VariableDeclarator: {
         array: false,
         object: true,

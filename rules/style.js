@@ -75,7 +75,7 @@ module.exports = {
 
     // require function expressions to have a name
     // https://eslint.org/docs/rules/func-names
-    'func-names': 'warn',
+    'func-names': ['off', 'as-needed'],
 
     // enforces use of function declarations or expressions
     // https://eslint.org/docs/rules/func-style
@@ -84,7 +84,7 @@ module.exports = {
 
     // enforce consistent line breaks inside function parentheses
     // https://eslint.org/docs/rules/function-paren-newline
-    'function-paren-newline': ['error', 'multiline'],
+    'function-paren-newline': ['error', 'consistent'],
 
     // Blacklist certain identifiers to prevent them being used
     // https://eslint.org/docs/rules/id-blacklist
@@ -103,25 +103,25 @@ module.exports = {
 
     // this option sets a specific tab width for your code
     // https://eslint.org/docs/rules/indent
-    indent: ['error', 2, {
-      SwitchCase: 1,
-      VariableDeclarator: 1,
-      outerIIFEBody: 1,
+    indent: ['error', 4, {
+      SwitchCase: 2,
+      VariableDeclarator: 2,
+      outerIIFEBody: 2,
       // MemberExpression: null,
       FunctionDeclaration: {
-        parameters: 1,
-        body: 1
+        parameters: 2,
+        body: 2
       },
       FunctionExpression: {
-        parameters: 1,
-        body: 1
+        parameters: 2,
+        body: 2
       },
       CallExpression: {
-        arguments: 1
+        arguments: 2
       },
-      ArrayExpression: 1,
-      ObjectExpression: 1,
-      ImportDeclaration: 1,
+      ArrayExpression: 2,
+      ObjectExpression: 2,
+      ImportDeclaration: 2,
       flatTernaryExpressions: false,
       ignoredNodes: ['JSXElement', 'JSXElement *']
     }],
@@ -176,7 +176,7 @@ module.exports = {
 
     // specify the maximum length of a line in your program
     // https://eslint.org/docs/rules/max-len
-    'max-len': ['error', 100, 2, {
+    'max-len': ['warn', 120, 4, {
       ignoreUrls: true,
       ignoreComments: false,
       ignoreRegExpLiterals: true,
@@ -246,7 +246,7 @@ module.exports = {
 
     // disallow use of the continue statement
     // https://eslint.org/docs/rules/no-continue
-    'no-continue': 'error',
+    'no-continue': 'warn',
 
     // disallow comments inline after code
     'no-inline-comments': 'off',
@@ -300,7 +300,7 @@ module.exports = {
 
     // disallow use of unary operators, ++ and --
     // https://eslint.org/docs/rules/no-plusplus
-    'no-plusplus': 'error',
+    'no-plusplus': ['error', {'allowForLoopAfterthoughts': true}],
 
     // disallow certain syntax forms
     // https://eslint.org/docs/rules/no-restricted-syntax
@@ -403,7 +403,7 @@ module.exports = {
     'quote-props': ['error', 'as-needed', { keywords: false, unnecessary: true, numbers: false }],
 
     // specify whether double or single quotes should be used
-    quotes: ['error', 'single', { avoidEscape: true }],
+    quotes: ['error', 'double'],
 
     // do not require jsdoc
     // https://eslint.org/docs/rules/require-jsdoc
