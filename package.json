@@ -1,6 +1,6 @@
 {
     "name":"eslint-config-feedo-base",
-    "version":"12.1.0",
+    "version":"216.1.0",
     "description":"Feedos's base JS ESLint config, following our styleguide (Airbnb config modification)",
     "main":"index.js",
     "scripts":{
