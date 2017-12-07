@@ -16,36 +16,36 @@ If you use yarn, run `npm info "eslint-config-airbnb-base@latest" peerDependenci
 
 1. Install the correct versions of each package, which are listed by the command:
 
-  ```sh
-  npm info "eslint-config-airbnb-base@latest" peerDependencies
-  ```
+    ```sh
+    npm info "eslint-config-airbnb-base@latest" peerDependencies
+    ```
 
-  Linux/OSX users can run
-  ```sh
-  (
-    export PKG=eslint-config-airbnb-base;
-    npm info "$PKG@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev "$PKG@latest"
-  )
-  ```
+    Linux/OSX users can run
+    ```sh
+    (
+        export PKG=eslint-config-airbnb-base;
+        npm info "$PKG@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev "$PKG@latest"
+    )
+    ```
 
-  Which produces and runs a command like:
+    Which produces and runs a command like:
 
-  ```sh
+    ```sh
+        npm install --save-dev eslint-config-airbnb-base eslint@^#.#.# eslint-plugin-import@^#.#.#
+    ```
+
+    Windows users can either install all the peer dependencies manually, or use the [install-peerdeps](https://github.com/nathanhleung/install-peerdeps) cli tool.
+
+    ```sh
+    npm install -g install-peerdeps
+    install-peerdeps --dev eslint-config-airbnb-base
+    ```
+
+    The cli will produce and run a command like:
+
+    ```sh
     npm install --save-dev eslint-config-airbnb-base eslint@^#.#.# eslint-plugin-import@^#.#.#
-  ```
-
-  Windows users can either install all the peer dependencies manually, or use the [install-peerdeps](https://github.com/nathanhleung/install-peerdeps) cli tool.
-
-  ```sh
-  npm install -g install-peerdeps
-  install-peerdeps --dev eslint-config-airbnb-base
-  ```
-
-  The cli will produce and run a command like:
-
-  ```sh
-  npm install --save-dev eslint-config-airbnb-base eslint@^#.#.# eslint-plugin-import@^#.#.#
-  ```
+    ```
 
 2. Add `"extends": "airbnb-base"` to your .eslintrc.
 
@@ -55,23 +55,23 @@ Lints ES5 and below. Requires `eslint` and `eslint-plugin-import`.
 
 1. Install the correct versions of each package, which are listed by the command:
 
-  ```sh
-  npm info "eslint-config-airbnb-base@latest" peerDependencies
-  ```
+    ```sh
+    npm info "eslint-config-airbnb-base@latest" peerDependencies
+    ```
 
-  Linux/OSX users can run
-  ```sh
-  (
-    export PKG=eslint-config-airbnb-base;
-    npm info "$PKG" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev "$PKG"
-  )
-  ```
+    Linux/OSX users can run
+    ```sh
+    (
+        export PKG=eslint-config-airbnb-base;
+        npm info "$PKG" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev "$PKG"
+    )
+    ```
 
-  Which produces and runs a command like:
+    Which produces and runs a command like:
 
-  ```sh
-  npm install --save-dev eslint-config-airbnb-base eslint@^3.0.1 eslint-plugin-import@^1.10.3
-  ```
+    ```sh
+    npm install --save-dev eslint-config-airbnb-base eslint@^3.0.1 eslint-plugin-import@^1.10.3
+    ```
 
 2. Add `"extends": "airbnb-base/legacy"` to your .eslintrc
 
