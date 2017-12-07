@@ -153,9 +153,9 @@ module.exports = {
       applyDefaultPatterns: true,
     }],
 
-    // disallow mixed 'LF' and 'CRLF' as linebreaks
+    // disallow mixed 'LF' and 'CRLF' as linebreaks [disabled as we don't care of it]
     // https://eslint.org/docs/rules/linebreak-style
-    'linebreak-style': ['error', 'unix'],
+    'linebreak-style': ['off'],
 
     // require or disallow an empty line between class members
     // https://eslint.org/docs/rules/lines-between-class-members
