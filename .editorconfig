@@ -7,5 +7,10 @@ charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
 end_of_line = lf
-# editorconfig-tools is unable to ignore longs strings or urls
+# editorconfig-tools is unable to ignore long strings or urls
 max_line_length = null
+
+# Ignore paths
+[/CHANGELOG.md]
+indent_size = none
+

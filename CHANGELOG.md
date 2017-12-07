@@ -14,8 +14,8 @@
 12.0.0 / 2017-09-02
 ==================
  - [deps] [breaking] require `eslint` v4
-     - enable `function-paren-newline`, `for-direction`, `getter-return`, `no-compare-neg-zero`, `semi-style`, `object-curly-newline`, `no-buffer-constructor`, `no-restricted-globals`, `switch-colon-spacing`, `template-tag-spacing`, `prefer-promise-reject-errors`, `prefer-destructuring`
-     - improve `indent`, `no-multi-spaces`, `no-trailing-spaces`, `no-underscore-dangle`
+   - enable `function-paren-newline`, `for-direction`, `getter-return`, `no-compare-neg-zero`, `semi-style`, `object-curly-newline`, `no-buffer-constructor`, `no-restricted-globals`, `switch-colon-spacing`, `template-tag-spacing`, `prefer-promise-reject-errors`, `prefer-destructuring`
+   - improve `indent`, `no-multi-spaces`, `no-trailing-spaces`, `no-underscore-dangle`
  - [breaking] move `comma-dangle` to Stylistic Issues (#1514)
  - [breaking] Rules prohibiting global isNaN, isFinite (#1477)
  - [patch] also disallow padding in classes and switches (#1403)
@@ -78,7 +78,7 @@
 11.0.0 / 2016-12-11
 ==================
  - [breaking] enable `no-await-in-loop`
- - [patch]  disable `no-duplicate-imports` rule (#1188, #1195, #1054)
+ - [patch] disable `no-duplicate-imports` rule (#1188, #1195, #1054)
  - [patch] `import/no-extraneous-dependencies`: add some comments to ignore patterns
  - [patch] add `import/no-extraneous-dependencies` ignore patterns for test files (#1174)
  - [patch] `import/no-extraneous-dependencies`: added ignore patterns for config files (#1168)
